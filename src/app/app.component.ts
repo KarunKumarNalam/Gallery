@@ -8,9 +8,5 @@ import { ImageService } from './image.service';
 })
 export class AppComponent {
   title = 'gallery';
-  images:any[] = [];
-  constructor(private imageserv : ImageService)
-  {
-    this.images = this.imageserv.getImages();
-  }
+  
 }

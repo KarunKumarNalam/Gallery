@@ -1,0 +1,20 @@
+.img {
+    width: 864px;
+    vertical-align: middle;
+    border-style: none;
+    margin-top: 38px;
+    margin-left: 122px;
+    height: 500px;
+}
+
+#caption
+{   
+    font-size: 1.5em;
+    font-family: "open sans",sans-serif;
+    color: #222;
+    border: 1px solid #bbb;
+    width: 217px;
+    margin-top: 21px;
+    margin-left: 473px;
+    text-align: center;
+}

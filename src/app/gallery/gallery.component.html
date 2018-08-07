@@ -8,7 +8,7 @@
   
 <ul>
     <li *ngFor = "let img of (images | imageFilter:filterBy)">
-      <img src = "{{img.url}}" class = "tn" height="160px" width="160px"/>
+     <a [routerLink]="['/image',img.id]"> <img src = "{{img.url}}" class = "tn" height="160px" width="160px"/></a>
   </li>
 </ul>
 </div>

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { IfStmt } from '../../node_modules/@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,16 @@ export class ImageService {
   getImages()
   {
     return IMAGES;
+  }
+  getImage(id)
+  {
+    for(let img of IMAGES)
+    {
+      if(img.id == id)
+      {
+        return img;
+      }
+    }
   }
 }
 
