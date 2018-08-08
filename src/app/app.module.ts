@@ -11,7 +11,8 @@ import { ImagedetailComponent } from './imagedetail/imagedetail.component';
 const appRoutes:Routes = [
   {path: '', redirectTo: '/gallery',pathMatch:'full'},
   {path: 'gallery', component: GalleryComponent},
-  {path: 'image/:id', component: ImagedetailComponent}
+  {path: 'image/:id', component: ImagedetailComponent},
+  {path:'**', redirectTo:'/gallery'}
 ];
 @NgModule({
   declarations: [
